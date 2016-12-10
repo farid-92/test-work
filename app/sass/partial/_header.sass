@@ -1,0 +1,18 @@
+header
+  +shadow(7px 7px 5px 0px rgba(50, 50, 50, 0.75))
+  padding: 20px
+  background: #fff
+  &::before
+    content: ''
+    +triangle-bot(100px 100px 0 100px, red)
+
+.logo
+  width: 150px
+  height: 200px
+  +md
+    width: 80px
+    height: 100px
+.nav
+  display: block
+  +md
+    display: inline-block

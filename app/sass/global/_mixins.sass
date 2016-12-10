@@ -1,0 +1,42 @@
+%ffArial
+  font-family: Arial, sans-serif
+
+=clearfix
+  &::after
+    clear: both
+    content: ""
+    display: table
+
+=flex
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+
+=shadow($shadow)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+=triangle-bot($size, $color)
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: $size
+  border-color: $color transparent transparent transparent
+
+=lg
+  @media (max-width: 1200px)
+    @content
+=md
+  @media (max-width: 1000px)
+    @content
+=tablet
+  @media (max-width: 840px)
+    @content
+=phone
+  @media (max-width: 640px)
+    @content
